@@ -46,6 +46,77 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="btn-menu" data-menu-open>
+          <svg width="32" height="22" class="humburger">
+            <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="menu is-hidden" data-menu>
+        <div>
+          <button type="button" class="button-close" data-menu-close>
+            <svg width="8" height="8" class="modal-close">
+              <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+            </svg>
+          </button>
+          <ul class="menu-list-page">
+            <li class="mob-menu-item">
+              <a href="./index.html" class="menu-page studio">Studio</a>
+            </li>
+            <li class="mob-menu-item">
+              <a href="./portfolio.html" class="menu-page">Portfolio</a>
+            </li>
+            <li class="mob-menu-item">
+              <a href="" class="menu-page">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <address class="menu-address-webstudio">
+            <ul class="menu-link-address">
+              <li class="menu-tel-item">
+                <a href="tel:+110001111111" class="menu-tel"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="menu-address"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="menu-soc-list list">
+            <li class="webstudio-soc-item">
+              <a class="webstudio-soc-link link" href="">
+                <svg width="24" height="24" class="webstudio-soc-icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="webstudio-soc-item">
+              <a class="webstudio-soc-link link" href="">
+                <svg width="24" height="24" class="webstudio-soc-icon">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="webstudio-soc-item">
+              <a class="webstudio-soc-link link" href="">
+                <svg width="24" height="24" class="webstudio-soc-icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="webstudio-soc-item">
+              <a class="webstudio-soc-link link" href="">
+                <svg width="24" height="24" class="webstudio-soc-icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -122,6 +193,7 @@
           <ul class="item-images">
             <li class="images">
               <img
+                srcset="./images/macbook.jpg 1x, ./images/macbook-2x.jpg 2x"
                 src="./images/macbook.jpg"
                 alt="macbook"
                 width="360"
@@ -130,6 +202,10 @@
             </li>
             <li class="images">
               <img
+                srcset="
+                  ./images/screenshots.jpg    1x,
+                  ./images/screenshots-2x.jpg 2x
+                "
                 src="./images/screenshots.jpg"
                 alt="screenshots"
                 width="360"
@@ -138,6 +214,7 @@
             </li>
             <li class="images">
               <img
+                srcset="./images/iphone.jpg 1x, ./images/iphone-2x.jpg 2x"
                 src="./images/iphone.jpg"
                 alt="iphone"
                 width="360"
@@ -152,7 +229,12 @@
           <h2 class="subject">Our Team</h2>
           <ul class="team">
             <li class="list-team">
-              <img src="./images/img(1).jpg" alt="Mark Guerrero" width="264" />
+              <img
+                srcset="./images/img(1).jpg 1x, ./images/img(1)-2x.jpg 2x"
+                src="./images/img(1).jpg"
+                alt="Mark Guerrero"
+                width="264"
+              />
               <div class="item-team">
                 <h3 class="subtitle">Mark Guerrero</h3>
                 <p class="text">Product Designer</p>
@@ -189,7 +271,12 @@
               </div>
             </li>
             <li class="list-team">
-              <img src="./images/img(2).jpg" alt="Tom Ford" width="264" />
+              <img
+                srcset="./images/img(2).jpg 1x, ./images/img(2)-2x.jpg 2x"
+                src="./images/img(2).jpg"
+                alt="Tom Ford"
+                width="264"
+              />
               <div class="item-team">
                 <h3 class="subtitle">Tom Ford</h3>
                 <p class="text">Frontend Developer</p>
@@ -226,7 +313,12 @@
               </div>
             </li>
             <li class="list-team">
-              <img src="./images/img(3).jpg" alt="Camila Garcia" width="264" />
+              <img
+                srcset="./images/img(3).jpg 1x, ./images/img(3)-2x.jpg 2x"
+                src="./images/img(3).jpg"
+                alt="Camila Garcia"
+                width="264"
+              />
               <div class="item-team">
                 <h3 class="subtitle">Camila Garcia</h3>
                 <p class="text">Marketing</p>
@@ -263,7 +355,12 @@
               </div>
             </li>
             <li class="list-team">
-              <img src="./images/img(4).jpg" alt="Daniel Wilson" width="264" />
+              <img
+                srcset="./images/img(4).jpg 1x, ./images/img(4)-2x.jpg 2x"
+                src="./images/img(4).jpg"
+                alt="Daniel Wilson"
+                width="264"
+              />
               <div class="item-team">
                 <h3 class="subtitle">Daniel Wilson</h3>
                 <p class="text">UI Designer</p>
@@ -526,5 +623,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

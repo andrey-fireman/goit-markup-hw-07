@@ -158,16 +158,92 @@ a {text-decoration: none;}
 
 }
 
+.humburger{
+    stroke: var(--title-color);
+    
+}
+.btn-menu{
+    background-color: var(--heading-color);
+    border: none;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    color: var(--title-color);
+    padding: 0;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--heading-color);
+    padding: 80px 35px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: opacity 250ms linear, visibility 250ms linear, pointer-events 250ms linear;
+}
+
+.menu-list-page { 
+}
+.menu-page {
+    font-weight: 700;
+    color: var(--title-color);
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    margin-bottom: 40px;
+}
+.mob-menu-item:not(:last-child){
+    margin-bottom: 40px;
+}
+.studio {
+}
+.menu-address-webstudio {
+}
+.menu-link-address {
+    margin-bottom: 48px;
+}
+.menu-soc-list{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 60px;
+}
+.menu-address {
+    font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+letter-spacing: 0.02em;
+color: var(--address-color);
+    font-style: normal;
+}
+.menu-tel{
+    font-weight: 700;
+font-size: 36px;
+line-height: 40px;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+color: var(--button-color);
+font-style: normal;
+}
+.menu-tel-item{
+    margin-bottom: 40px;
+}
+
 
 /* main */
 /*section_1*/
 
 .hero{
     background-color: var(--title-color);
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/hero-section.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/bg-images-mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 1440px;
+    background-size: 428px;
     padding: 112px 0;
 
 }
@@ -1057,6 +1133,13 @@ input::placeholder{
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image:linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/bg-images-mob-2x.jpg);
+  }
+}
 
 @media screen and (min-width: 480px) {
     .container{
@@ -1121,6 +1204,22 @@ input::placeholder{
     letter-spacing: 0.02em;
     margin-bottom: 36px;
 }
+
+.hero{
+    background-color: var(--title-color);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/bg-images-tab.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 768px;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image:linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/bg-images-tab-2x.jpg);
+  }
+}
 .list-page{
     display: flex;
 }
@@ -1160,8 +1259,8 @@ input::placeholder{
 .webstudio-section{
     display: flex;
     flex-wrap: wrap;
-    margin-left: 93px;
-    margin-right: 93px;
+    padding-left: 108px;
+    justify-content: start;
 }
 .link-footer-page{
     justify-content: start;
@@ -1184,6 +1283,9 @@ input::placeholder{
 }
 .label{
     width: auto;
+}
+.humburger{
+    display: none;
 }
 
 }
@@ -1231,19 +1333,32 @@ input::placeholder{
 }
 .hero-section{
     color: var(--heading-color);
-    
     font-size: 56px;
     line-height: 1;
     text-align: center;
     letter-spacing: 0.02em;
     margin-bottom: 48px;
 }
-.section-features{
-    padding-bottom: 0;
-}
+
 .hero{
+    background-color: var(--title-color);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/bg-images-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1440px;
     max-width: 1440px;
     margin: 0 auto;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image:linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/bg-images-desktop-2x.jpg);
+  }
+}
+.section-features{
+    padding-bottom: 0;
 }
 
 .link-page{
